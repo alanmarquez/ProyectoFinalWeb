@@ -17,6 +17,13 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" scr="js/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+    <!-- Referencia del archivo CSS
+    <link href="css/custom.css" rel="stylesheet">-->
 
 </head>
 <body>
@@ -44,24 +51,71 @@
                 </form>
             </div>
             <div id="resultados">
-            
-            </div>
 
-
-        </div>
-        <div class="slider-container">
-            <div class="mp-slider">
-                <ul class="items">
-                    <li><img src="images/slide-1.jpg" alt="" /><div class="banner mp-ban-1"><span class="row-1">comida completa</span><span class="row-2">Rapida y Deliciosa</span><span class="row-3">para compartir</span></div></li>
-                    <li><img src="images/slide-2.jpg" alt="" /><div class="banner mp-ban-2"><span class="row-1">Las Mejores</span><span class="row-2">Pizzas</span></div></li>
-                    <li><img src="images/slide-3.jpg" alt="" /><div class="banner mp-ban-3"><span class="row-1">Frescas</span><span class="row-2">Saludables</span><span class="row-3">y de gran tamaño</span></div></li>
-                </ul>
             </div>
         </div>
-        <a href="#" class="mp-prev"></a>
-        <a href="#" class="mp-next"></a>
     </header>
+
+    <!--CODIGO PARA NUEVO SLIDER CON BOOTSTRAP-->
+        <div id="Slider" class="container">
+            <br>
+
+            <div class="col-md-10">
+                <div id="carousel-1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-1" data-slide-to="1"></li>
+                        <li data-target="#carousel-1" data-slide-to="2"></li>
+                    </ol>
+                    
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/slide-1.jpg" class="img-responsive" alt="">
+                            <div class="carousel-caption hidden-xs hidden-sm">
+                                <font color="yellow">
+                                <h3>Comida completa</h3> 
+                                </font>
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+                            <img src="images/slide-2.jpg" class="img-responsive" alt="">
+                            <div class="carousel-caption hidden-xs hidden-sm">
+                                <font color="red">
+                                <h3>Tu mejor opción para compartir</h3> 
+                                </font>
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+                            <img src="images/slide-3.jpg" class="img-responsive" alt="">
+                            <div class="carousel-caption hidden-xs hidden-sm">
+                                <font color="black">
+                                <h3>Frescas y Saludables</h3>
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+                        <span  aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+
+                    <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+                        <span  aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
     <!-- Content -->
+    
     <section id="content"><div class="ic"></div>
         <div class="container_24">
             <div class="wrapper">
@@ -100,7 +154,7 @@
                                                 Elige
                                             </dd>
                                             <dd>
-                                            	Selecciona lo que deceas comer. 
+                                            	Selecciona lo que deseas comer. 
                                             </dd>
                                         </dl>
                                     </div>

@@ -31,7 +31,7 @@
 		</div>
 	<?php } while($fila=mysqli_fetch_assoc($resultado)); ?>
 <?php } 
-elseif($total > 0 && $search=='') echo '<h2>Ingresa un parámetro de búsqueda</h2> <p>Ingresa palabras clave relacionadas con tu búsqueda</p>';
+elseif($total > 0 && $search=='') echo '';
 else echo '<h2>No se encontró ningún resultado</h2> <p>Intenta realizar tu búsqueda con palabras más específicas...</p>';
 
 ?>
