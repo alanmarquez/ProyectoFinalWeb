@@ -5,6 +5,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
+	<meta charset="utf-8">
 	<!-- integracion a Facebook y twitter -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
@@ -36,6 +37,8 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -43,6 +46,17 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<!-- Lightbox -->
+        <script type="text/javascript" src="lightbox/js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="lightbox/js/jquery-ui-1.8.18.custom.min.js"></script>
+        <script type="text/javascript" src="lightbox/js/jquery.smooth-scroll.min.js"></script>
+        <script type="text/javascript" src="lightbox/js/lightbox.js"></script>
+        <link rel="stylesheet" href="lightbox/css/lightbox.css" type="text/css" />
+
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/agregarNuevaFila.js"></script>
+        <script type="text/javascript" src="js/modificarEstiloInputFile.js"></script>
+        <script type="text/javascript" src="js/cambiarOpacidadImagenes.js"></script>
 
 	</head>
 	<body>
@@ -275,9 +289,26 @@
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
 						<h2 class="heading to-animate">Galeria</h2>
-						<p class="sub-heading to-animate">Algun texto relacionado por aqui....</p>
-					
-				
+						<p class="sub-heading to-animate">Permitenos 
+						sugerencias</p>
+						<div class="galeria">
+						<?php
+                			require 'config.php';
+                			require 'GestorArchivos.php';
+
+                			$conexion = new mysqli($servidor, $usuarioBD, $passwordBD, $baseDatos);
+                
+                			$consulta = "SELECT archivo, directorio FROM galeriaimagenes ORDER BY id";
+                			$resultado = $conexion->query($consulta);
+                			// Muestra las imagenes de la galeria.
+                			while($filas = $resultado->fetch_array(MYSQLI_ASSOC)) {
+                    		// Se comprueba que existan las imagenes
+                    			if (file_exists("imagenes/".$filas["directorio"]."/".$filas["archivo"])){
+                        			echo'<a href="imagenes/'.$filas['directorio'].'/'.$filas['archivo'].'" rel="lightbox[galeria]" title="'.$filas['archivo'].'"><img src="imagenes/'.$filas['directorio'].'/'.$filas['archivo'].'"/></a>';
+                    			}                    
+                			}
+                		?>
+                		</div>
 					</div>
 				</div>
 			</div>
@@ -296,7 +327,6 @@
 				<div class="row text-center fh5co-heading row-padded">
 				<div class="row">
 					<div class="col-md-6 to-animate-2">
-						<?php
 							<br /> <i class="icon-sign-in"></i>
     						<a href="Catalogo/insertar.php">Insertar nuevo negocio</a>
  							<br /> <i class="icon-search"></i> 
