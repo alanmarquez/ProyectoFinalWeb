@@ -258,8 +258,18 @@
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2 to-animate">
 						<h2 class="heading">Tu elige</h2>
-						<p class="sub-heading">Busca aqui..
-						(aqui puede ir el buscador)</p>
+
+
+						<!-- FORMULARIO PARA EL BUSCADOR -->
+			            <div class="form center">
+			                <form action="" method="post" name="search_form" id="search_form">
+			                    <input placeholder="Buscar" type="text" name="search" id="search" size="80">
+			                </form>
+			            </div>
+			            <div id="resultados">
+
+			            </div>
+
 						
 					</div>
 				</div>
@@ -281,13 +291,13 @@
 					<div class="col-md-6 to-animate-2">
 						<?php
 							<br />
-    						<a href="insertar.php">Insertar nuevo negocio</a>
+    						<a href="Catalogo/insertar.php">Insertar nuevo negocio</a>
  							<br />
- 							<a href="consultar.php">Consultar negocios</a>
+ 							<a href="Catalogo/consultar.php">Consultar negocios</a>
  							<br />
- 							<a href="modificar.php">Modificar negocio</a>
+ 							<a href="Catalogo/modificar.php">Modificar negocio</a>
  							<br />
- 							<a href="eliminar.php">Eliminar negocio</a>
+ 							<a href="Catalogo/eliminar.php">Eliminar negocio</a>
 							<br />
 						</div>
 				</div>
@@ -299,7 +309,14 @@
 	<div id="fh5co-footer">
 		<div class="container">
 			<div class="row row-padded">
+
+				
+
 				<div class="col-md-12 text-center">
+					<!-- www.tutiempo.net - Ancho:360px - Alto:99px -->
+                	<div id="TT_JejgrhtBtdfcEI4AMAxE11E118aATfflbtkt1syIKkz">El tiempo - Tutiempo.net</div>
+                	<script type="text/javascript" src="https://www.tutiempo.net/s-widget/l_JejgrhtBtdfcEI4AMAxE11E118aATfflbtkt1syIKkz"></script>
+
 					<p class="to-animate">&copy; 2017 ComidaYa<br> <a href="" target="_blank"></a> Diseño: <a href="https://www.facebook.com/lidia.lau.china?ref=br_rs" target="_blank">Los amantes de Lidia</a> 
 					</p>
 					<p class="text-center to-animate"><a href="#" class="js-gotop">Inicio</a></p>
@@ -345,6 +362,39 @@
 	</script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+
+	<!--SCRIPT PARA EL BUSCADOR -->
+<script type="text/javascript">
+    $('#search').focus();
+    $(function(){
+        //Funcion para que cuando se pulse ENTER se haga la busqueda
+        $('#search_form').submit(function(e){
+            e.preventDefault();
+        })
+
+    $('#search').keyup(function(){
+        //Se almacena en la variable envio lo que se quiere buscar
+        var envio = $('#search').val();
+
+        //PONER IMAGEN EN EL DIV RESULTADOS
+        //$('#resultados').html('<h2> <img src="img/Cargando.gif" width="20" alt="" /> Cargando</h2>');
+
+        $.ajax({
+            type: 'POST',
+            url: 'php/buscador.php',
+            data: ('search=' + envio),
+            success: function(resp){
+                if(resp != ""){
+                    $('#resultados').html(resp);
+                }
+            }
+        })
+
+
+        })
+    })
+</script>
+
 
 	</body>
 </html>

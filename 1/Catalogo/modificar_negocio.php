@@ -35,7 +35,7 @@ if(isset($_POST['modificar']))
 	}
 	else
 	{
-		echo "error";
+		echo "Error";
 	}
 }
 ?>
@@ -43,13 +43,15 @@ if(isset($_POST['modificar']))
 <form name="formulario" method="post" action="">
 
 	<h3>Nombre: 
-	<input placeholder="" type="text" name="nombre2" value="<?php echo $nombre;?>" maxlength="30" size="40"></h3>
+	<input placeholder="" type="text" name="nombre2" value="<?php echo $nombre;?>"  size="40"></h3>
     
-	<h3>Descripcion:
-    <input placeholder="" type="text" name="articulo2" value="<?php echo $articulo;?>" maxlength="30" size="40"></h3>
+	<!--<h3>Descripcion:
+    <input placeholder="" type="text" name="articulo2" value="<?php echo $articulo;?>" size="40"></h3>-->
+    <h3>Descripción:
+    <textarea placeholder="" name="articulo2" rows="10" cols="40"><?php echo $articulo;?></textarea></h3>
 	
 	<h3>Telefono:
-	<input placeholder="" type="text" name="telefono2" value="<?php echo $telefono;?>" maxlength="30" size="40"></h3>
+	<input placeholder="" type="text" name="telefono2" value="<?php echo $telefono;?>" size="40"></h3>
     
     <input  type="submit"  value="Modificar" name="modificar">
     

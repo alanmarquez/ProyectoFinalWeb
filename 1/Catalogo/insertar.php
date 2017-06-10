@@ -42,17 +42,18 @@ if(isset($_POST['registrar']))
 ?>
 <form name="formulario" method="post" action="">
      
-    <input placeholder="Nombre" type="text" name="nombre" maxlength="30" size="40"><br><br>
+    <input placeholder="Nombre" type="text" name="nombre" size="40"><br><br>
     
-    <input placeholder="Descripcion" type="text" name="articulo" maxlength="30" size="40"><br><br>
+    <!--<input placeholder="Descripcion" type="text" name="articulo" size="40"><br><br>-->
+    <textarea placeholder="Descripcion" name="articulo" rows="10" cols="40"></textarea><br><br>
 	
-	<input placeholder="Telefono" type="text" name="telefono" maxlength="30" size="40"><br><br>
+	<input placeholder="Telefono" type="text" name="telefono" size="40"><br><br>
     
     <input  type="submit"  value="Registrar" name="registrar">
     
 </form>
 <br />
-<a href="index.php">Regresar</a>
+<a href="../index.html">Regresar</a>
 
 </body>
 </html>

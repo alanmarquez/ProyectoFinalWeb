@@ -51,7 +51,7 @@ include("paginas/conexion.php");
 ?>
 </table>
 <br />
-<a href="index.php">Regresar</a>
+<a href="../index.html">Regresar</a>
 
 </body>
 </html>
