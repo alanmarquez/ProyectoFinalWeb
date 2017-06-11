@@ -37,8 +37,8 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-
+	<!--<link rel="stylesheet" type="text/css" href="css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="css_scripts/galeria.css"/>
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -261,7 +261,7 @@
 			
 
 
-		<div id="fh5co-events" data-section="events" style="background-image: url(images/slide_5.jpg);" data-stellar-background-ratio="0.5">
+		<div id="fh5co-events" data-section="events" style="background-image: url(images/ajua.jpg);" data-stellar-background-ratio="0.5">
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2 ">
@@ -271,7 +271,7 @@
 						<!-- FORMULARIO PARA EL BUSCADOR -->
 			            <div class="form center">
 			                <form action="" method="post" name="search_form" id="search_form">
-			                    <input placeholder="Buscar" type="text" name="search" id="search" size="80">
+			                    <input placeholder="Buscar" type="text" name="search" id="search" style="width:100%">
 			                </form>
 			            </div>
 			            <div id="resultados">
@@ -286,7 +286,7 @@
 	
 
 		
-		<div id="fh5co-menus" data-section="galeria"data-section="events" style="background-image: url(images/q.jpg);" data-stellar-background-ratio="0.5">
+		<div id="fh5co-menus" data-section="galeria" data-section="events" style="background-image: url(images/q.jpg);" data-stellar-background-ratio="0.5">
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">

@@ -1,0 +1,25 @@
+body {
+    
+    /*background: darkgrey;*/
+}
+
+
+.galeria{
+    width: auto;
+    /*margin: auto;*/
+    background: black;
+    color: white;
+    padding: 20px 10px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.6);    
+}
+.galeria img{
+    width: 220px;
+    height: 220px;
+    border: 1px solid white;
+    padding: 1px;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+    border: 2px solid bisque;
+    border-radius: 5px;
+}
