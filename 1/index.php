@@ -65,7 +65,6 @@
 		<div id="fh5co-home" class="js-fullheight" data-section="home">
 
 			<div class="flexslider">
-				
 				<div class="fh5co-overlay"></div>
 				<div class="fh5co-text">
 					<div class="container">
@@ -258,11 +257,14 @@
 			</div>
 		</div>
 
+
+			
+
+
 		<div id="fh5co-events" data-section="events" style="background-image: url(images/slide_5.jpg);" data-stellar-background-ratio="0.5">
-			<div class="fh5co-overlay"></div>
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
-					<div class="col-md-8 col-md-offset-2 to-animate">
+					<div class="col-md-8 col-md-offset-2 ">
 						<h2 class="heading">Tu elige</h2>
 
 
@@ -281,16 +283,16 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	
 
 		
-		<div id="fh5co-menus" data-section="galeria">
+		<div id="fh5co-menus" data-section="galeria"data-section="events" style="background-image: url(images/q.jpg);" data-stellar-background-ratio="0.5">
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
 						<h2 class="heading to-animate">Galeria</h2>
-						<p class="sub-heading to-animate">Permitenos 
-						sugerencias</p>
+						<p class="sub-heading to-animate"><font color="orange"><font size=5>Permitenos 
+						sugerencias</font></font></p>
 						<div class="galeria">
 						<?php
                 			require 'config.php';
@@ -315,28 +317,29 @@
 		</div>
 
 
-
-		<div id="fh5co-contact" data-section="catalogo">
+		<div id="fh5co-contact" data-section="catalogo" style="background-image: url(images/w.jpg);" data-stellar-background-ratio="0.5">
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
-						<h2 class="heading to-animate">Catalogo</h2>
+						<h2 class="heading">Catalogo</h2>
 						<p class="sub-heading to-animate"></p>
 					</div>
 				</div>
 				<div class="row text-center fh5co-heading row-padded">
-				<div class="row">
+				<div class="sub-heading to-animate">
 					<div class="col-md-6 to-animate-2">
 							<br /> <i class="icon-sign-in"></i>
-    						<a href="Catalogo/insertar.php">Insertar nuevo negocio</a>
+    						<a href="Catalogo/insertar.php"><font color="white"><font size=5> Insertar nuevo negocio</font></font></a>
  							<br /> <i class="icon-search"></i> 
- 							<a href="Catalogo/consultar.php">Consultar negocios</a>
+ 							<a href="Catalogo/consultar.php"><font color="white"><font size=5>Consultar negocios</font></font></a>
  							<br /> <i class="icon-gears"></i> 
- 							<a href="Catalogo/modificar.php">Modificar negocio</a>
+ 							<a href="Catalogo/modificar.php"><font color="white"><font size=5>Modificar negocio</font></font></a>
  							<br /> <i class="icon-remove"></i> 
- 							<a href="Catalogo/eliminar.php">Eliminar negocio</a>
+ 							<a href="Catalogo/eliminar.php"><font color="white"><font size=5>Eliminar negocio</font></font></a>
+
 							<br />
 						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -345,27 +348,28 @@
 
 	<div id="fh5co-footer">
 		<div class="container">
+
 			<div class="row row-padded">
-
-				
-
 				<div class="col-md-12 text-center">
+					<div class="col-md-12 text-center">
 					<!-- www.tutiempo.net - Ancho:360px - Alto:99px -->
                 	<div id="TT_JejgrhtBtdfcEI4AMAxE11E118aATfflbtkt1syIKkz">El tiempo - Tutiempo.net</div>
                 	<script type="text/javascript" src="https://www.tutiempo.net/s-widget/l_JejgrhtBtdfcEI4AMAxE11E118aATfflbtkt1syIKkz"></script>
+                	</div>
+
+					<p class="text-center to-animate"><a href="#" class="js-gotop">Inicio</a></p>
+                	<div class="row">
+						<div class="col-md-12 text-center">
+							<ul class="fh5co-social">
+								<li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>
+								<li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
+								<li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
 
 					<p class="to-animate">&copy; 2017 ComidaYa<br> <a href="" target="_blank"></a> Diseño: <a href="https://www.facebook.com/lidia.lau.china?ref=br_rs" target="_blank">Los amantes de Lidia</a> 
 					</p>
-					<p class="text-center to-animate"><a href="#" class="js-gotop">Inicio</a></p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<ul class="fh5co-social">
-						<li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>
-						<li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
-						<li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>
-					</ul>
 				</div>
 			</div>
 		</div>

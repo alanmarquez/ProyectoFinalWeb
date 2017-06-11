@@ -1,0 +1,67 @@
+body  {
+	margin: 0px;
+	font-size: 12px;
+	font-family: Verdana;
+	color : #B6C0C0;
+	background-color : #718585;
+	background-image: url(../images/wood_1.png); 
+	background-position: top left;
+	background-repeat: repeat - y; 
+}
+.tablacentro{
+	background-image: url(../images/wood_1.png); 
+	background-position: top left;
+	background-repeat: repeat - y; 
+}
+a.mbrocos  {
+	text-decoration : none;
+	font-size: 12px;
+	font-family : verdana;
+	color : #FF9900;
+}
+a.mbrocos:hover  {
+	text-decoration : underline;
+	font-size: 12px;
+	font-family : verdana;
+	color : #FFFFFF;
+}
+a.brcmedia  {
+	text-decoration : none;
+	font-size: 12px;
+	font-family : verdana;
+	color : #FF9900;
+}
+a.brcmedia:hover  {
+	text-decoration : underline;
+	font-size: 12px;
+	font-family : verdana;
+	color : #FFFFFF;
+}
+a.brcenlaces  {
+	text-decoration : none;
+	font-size: 12px;
+	font-family : verdana;
+	color : #232929;
+}
+a.brcenlaces:hover  {
+	text-decoration : underline;
+	font-size: 12px;
+	font-family : verdana;
+	color : #FFFFFF;
+}
+table {
+	font-size: 12px;
+	font-family: Verdana;
+	color : #B6C0C0;
+}
+td {
+	font-size: 12px;
+	font-family: Verdana;
+	color : #B6C0C0;
+}
+
+th {
+	font-size: 12px;
+	font-family: Verdana;
+	color : #B6C0C0;
+}

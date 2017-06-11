@@ -2,6 +2,6 @@
     // Datos de la base de datos.
     $servidor="localhost";
     $usuarioBD="root";
-    $passwordBD="123456";	
+    $passwordBD="";	
     $baseDatos="proyecto_final";
 ?>
