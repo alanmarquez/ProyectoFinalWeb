@@ -179,7 +179,7 @@
 								<div class="fh5co-v-col-2 fh5co-text arrow-left">
 									<h2>Pizza Hut</h2>
 									<span class="Tel/Cel">(55) 5258-9977</span>
-									<p>De las pizzerias con mas tradicion y calidad, variedad de pizzas y complementos con mucho sabor.</p>
+									<p>Una de las pizzerias con mas tradicion y calidad, variedad de pizzas y complementos con mucho sabor.</p>
 								</div>
 							</div>
 							<div class="fh5co-h-row-2 fh5co-reversed to-animate-2">
@@ -409,7 +409,7 @@
 
 	<!--SCRIPT PARA EL BUSCADOR -->
 <script type="text/javascript">
-    $('#search').focus();
+    //$('#search').focus();
     $(function(){
         //Funcion para que cuando se pulse ENTER se haga la busqueda
         $('#search_form').submit(function(e){
