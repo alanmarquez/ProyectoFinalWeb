@@ -404,6 +404,9 @@
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
 
+	<!--ANIMACION JS (jQuery)-->
+	<script src="js/animacion.js"></script>
+
 	<!--SCRIPT PARA EL BUSCADOR -->
 <script type="text/javascript">
     $('#search').focus();
