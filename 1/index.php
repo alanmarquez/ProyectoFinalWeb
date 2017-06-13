@@ -90,13 +90,14 @@
 					<div class="fh5co-menu-1">
 						<a href="#" data-nav-section="home">Home</a>
 						<a href="#" data-nav-section="about">Nosotros</a>
-						<a href="#" data-nav-section="features">Socios</a>
+						<a href="#" data-nav-section="events">Buscador</a>
 					</div>
 					<div class="fh5co-logo">
 						<a href="index.html">ComidaYA</a>
 					</div>
 					<div class="fh5co-menu-2">
-						<a href="#" data-nav-section="events">Buscador</a>
+						
+						<a href="#" data-nav-section="features">Socios</a>
 						<a href="#" data-nav-section="galeria">Galeria</a>
 						<a href="#" data-nav-section="catalogo">Catalogo</a>
 					</div>
@@ -151,6 +152,29 @@
 						</ul>
 					</div>
 
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-events" data-section="events" style="background-image: url(images/ajua.jpg);" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row text-center fh5co-heading row-padded">
+					<div class="col-md-8 col-md-offset-2 ">
+						<h2 class="heading">Tu elige</h2>
+
+
+						<!-- FORMULARIO PARA EL BUSCADOR -->
+			            <div class="form center">
+			                <form action="" method="post" name="search_form" id="search_form">
+			                    <input placeholder="Buscar" type="text" name="search" id="search" style="width:100%">
+			                </form>
+			            </div>
+			            <div id="resultados">
+
+			            </div>
+
+						
+					</div>
 				</div>
 			</div>
 		</div>
@@ -261,28 +285,7 @@
 			
 
 
-		<div id="fh5co-events" data-section="events" style="background-image: url(images/ajua.jpg);" data-stellar-background-ratio="0.5">
-			<div class="container">
-				<div class="row text-center fh5co-heading row-padded">
-					<div class="col-md-8 col-md-offset-2 ">
-						<h2 class="heading">Tu elige</h2>
-
-
-						<!-- FORMULARIO PARA EL BUSCADOR -->
-			            <div class="form center">
-			                <form action="" method="post" name="search_form" id="search_form">
-			                    <input placeholder="Buscar" type="text" name="search" id="search" style="width:100%">
-			                </form>
-			            </div>
-			            <div id="resultados">
-
-			            </div>
-
-						
-					</div>
-				</div>
-			</div>
-		</div>
+		
 	
 
 		
