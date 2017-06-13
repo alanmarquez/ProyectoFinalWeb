@@ -2,7 +2,7 @@
 // datos para la coneccion a mysql 
 $hostdb= "localhost";
 $userdb= "root";
-$passdb= "123456";
+$passdb= "";
 $db= "proyecto_final";
 
 //Realizamos la conexion
